@@ -1,2 +1,2 @@
-// Vercel Serverless Function Entry Point
-import '../dist/index.cjs';
+// Vercel Serverless Function
+module.exports = require('./serverless.cjs');

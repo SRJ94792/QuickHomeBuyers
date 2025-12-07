@@ -3,7 +3,6 @@ node_modules
 *.log
 .env.local
 .DS_Store
-client/src
-server
-script
+.replit
+.local
 attached_assets
