@@ -74,8 +74,8 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        className={`flex flex-col items-center justify-center p-8 rounded-lg text-center ${
-          variant === "hero" ? "bg-white/10 backdrop-blur-md" : "bg-card"
+        className={`flex flex-col items-center justify-center p-8 rounded-lg text-center shadow-xl ${
+          variant === "hero" ? "bg-white" : "bg-card"
         }`}
         data-testid="form-success"
       >
@@ -86,10 +86,10 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
         >
           <CheckCircle2 className="w-16 h-16 text-success mb-4" />
         </motion.div>
-        <h3 className={`text-xl font-bold mb-2 ${variant === "hero" ? "text-white" : "text-foreground"}`}>
+        <h3 className="text-xl font-bold mb-2 text-foreground">
           Thank You!
         </h3>
-        <p className={`text-sm ${variant === "hero" ? "text-white/80" : "text-muted-foreground"}`}>
+        <p className="text-sm text-muted-foreground">
           We've received your request. Our team will contact you within 24 hours with your cash offer.
         </p>
       </motion.div>
@@ -99,9 +99,9 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`space-y-4 p-6 rounded-lg ${
+      className={`space-y-4 p-6 rounded-lg shadow-xl ${
         variant === "hero"
-          ? "bg-white/10 backdrop-blur-md border border-white/20"
+          ? "bg-white border border-gray-200"
           : "bg-card border border-card-border"
       }`}
       data-testid="lead-form"
@@ -109,7 +109,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
       <div className="space-y-1.5">
         <Label
           htmlFor="address"
-          className={variant === "hero" ? "text-white" : "text-foreground"}
+          className="text-foreground font-medium"
         >
           Property Address
         </Label>
@@ -122,11 +122,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
             setFormData({ ...formData, address: e.target.value });
             if (errors.address) setErrors({ ...errors, address: undefined });
           }}
-          className={`${
-            variant === "hero"
-              ? "bg-white/90 text-foreground placeholder:text-muted-foreground border-transparent"
-              : ""
-          } ${errors.address ? "border-destructive" : ""}`}
+          className={errors.address ? "border-destructive" : ""}
           data-testid="input-address"
         />
         {errors.address && (
@@ -137,7 +133,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
       <div className="space-y-1.5">
         <Label
           htmlFor="phone"
-          className={variant === "hero" ? "text-white" : "text-foreground"}
+          className="text-foreground font-medium"
         >
           Phone Number
         </Label>
@@ -148,11 +144,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
           value={formData.phone}
           onChange={handlePhoneChange}
           maxLength={14}
-          className={`${
-            variant === "hero"
-              ? "bg-white/90 text-foreground placeholder:text-muted-foreground border-transparent"
-              : ""
-          } ${errors.phone ? "border-destructive" : ""}`}
+          className={errors.phone ? "border-destructive" : ""}
           data-testid="input-phone"
         />
         {errors.phone && (
@@ -163,7 +155,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
       <div className="space-y-1.5">
         <Label
           htmlFor="email"
-          className={variant === "hero" ? "text-white" : "text-foreground"}
+          className="text-foreground font-medium"
         >
           Email Address
         </Label>
@@ -176,11 +168,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
             setFormData({ ...formData, email: e.target.value });
             if (errors.email) setErrors({ ...errors, email: undefined });
           }}
-          className={`${
-            variant === "hero"
-              ? "bg-white/90 text-foreground placeholder:text-muted-foreground border-transparent"
-              : ""
-          } ${errors.email ? "border-destructive" : ""}`}
+          className={errors.email ? "border-destructive" : ""}
           data-testid="input-email"
         />
         {errors.email && (
@@ -204,7 +192,7 @@ export default function LeadForm({ variant = "hero", onSubmit }: LeadFormProps) 
         )}
       </Button>
 
-      <p className={`text-xs text-center ${variant === "hero" ? "text-white/70" : "text-muted-foreground"}`}>
+      <p className="text-xs text-center text-muted-foreground">
         No obligation. 100% free. Your info is safe with us.
       </p>
     </form>
