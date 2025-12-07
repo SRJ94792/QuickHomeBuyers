@@ -1,0 +1,216 @@
+## Replit Prompt for Next-Gen Cash Home Buyer Website
+
+Create a modern, next-generation **"We Buy Houses for Cash"** landing page using **Next.js 14+, TypeScript, Tailwind CSS, and Framer Motion**. This should be a single-page application with a contemporary design that modernizes the traditional real estate investor website aesthetic.
+
+### Business Model & Purpose
+- **Business Type**: Real estate investment company that buys houses directly from homeowners for cash
+- **Target Audience**: Homeowners in difficult situations (foreclosure, inherited property, need quick sale, distressed homes, bad tenants, relocation)
+- **Value Proposition**: No fees, no repairs needed, AS-IS purchase, fast closing (7 days), all-cash offers within 24 hours
+
+### Key Sections to Include
+
+1. **Hero Section**
+   - Compelling headline: "Sell Your House For Cash in [Location]"
+   - Subheadline emphasizing: No fees, No commissions, No stress
+   - Primary lead capture form (Property Address, Phone, Email)
+   - Trust badges (As Seen On: Fox, NBC, ABC, CBS logos)
+   - Prominent CTA button
+
+2. **How It Works (3-Step Process)**
+   - Step 1: Contact Us / Fill Form
+   - Step 2: Get Fair Cash Offer in 24 Hours
+   - Step 3: Close Fast & Get Paid
+   - Use animated step indicators with icons
+
+3. **Benefits Comparison Section**
+   - Two-column comparison: "Our Process" vs "Traditional Real Estate"
+   - Our advantages: Zero fees, AS-IS sale, close in 7 days, no repairs, highest off-market price, no contingencies
+   - Traditional drawbacks: 45+ days, 5-6% commission, repairs needed, open houses, financing contingencies
+
+4. **Situations We Help Section**
+   - Grid of common scenarios with icons:
+     - Foreclosure/Repossession
+     - Inherited Property
+     - Distressed/Repairs Needed
+     - Vacant Property
+     - Difficult Tenants
+     - Quick Relocation
+     - Avoid Commissions
+     - Financial Hardship
+
+5. **Testimonials Section**
+   - 3-4 customer reviews with ratings
+   - Real names with verified badges
+   - Emphasize smooth process, fair prices, trustworthy service
+
+6. **About/Trust Section**
+   - Company credibility ("Trusted Since [Year]")
+   - "Hundreds of homes purchased"
+   - Professional, local, family-oriented messaging
+
+7. **Final CTA Section**
+   - Another lead form
+   - Urgency messaging
+   - Phone number prominently displayed
+
+8. **Footer**
+   - Links: How It Works, FAQ, Contact, Privacy Policy, Blog
+   - Company description
+   - Social proof
+
+### Modern Design Requirements
+
+**Visual Style:**
+- Clean, contemporary design with plenty of white space
+- Use modern gradient overlays and glassmorphism effects
+- Bold, confident typography (try Inter or Manrope fonts)
+- Color scheme: Professional blues/teals with accent colors (orange/green for CTAs)
+- High-quality hero images (modern homes, happy homeowners)
+- Smooth micro-animations throughout
+
+**Interactive Elements:**
+- Animated number counters for stats
+- Smooth scroll animations (fade-in, slide-up)
+- Hover effects on cards and buttons
+- Animated step indicators
+- Parallax scrolling effects (subtle)
+- Animated testimonial carousel
+
+**Form Design:**
+- Modern floating label inputs
+- Real-time validation
+- Loading states with spinners
+- Success animations
+- Multi-step form option (progressive disclosure)
+
+**Layout:**
+- Sticky header with smooth scroll behavior
+- Mobile-first responsive design
+- Use CSS Grid and Flexbox
+- Section dividers with modern shapes/curves
+- Card-based layouts for content blocks
+
+### Technical Implementation
+
+**Tech Stack:**
+- Next.js 14 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+- React Hook Form for form handling
+- Zod for form validation
+- shadcn/ui components (optional)
+
+**Features to Include:**
+- Phone number formatting as user types
+- Address autocomplete (optional)
+- Smooth page transitions
+- Loading skeletons
+- SEO optimization with Next.js metadata
+- Performance optimization (lazy loading images)
+
+**Components Structure:**
+```
+- Header (sticky navigation)
+- HeroSection (with form)
+- TrustBadges
+- HowItWorksSection
+- ComparisonSection
+- SituationsGrid
+- TestimonialsCarousel
+- AboutSection
+- FinalCTASection
+- Footer
+```
+
+### SEO Requirements (CRITICAL)
+
+**Next.js Metadata & SEO Setup:**
+- Implement comprehensive metadata in `app/layout.tsx` and `app/page.tsx`
+- Include proper title tags: "Sell Your House Fast for Cash in [Location] | [Company Name]"
+- Meta descriptions (155-160 characters) with primary keywords
+- Open Graph tags for social sharing (og:title, og:description, og:image, og:url)
+- Twitter Card metadata
+- Canonical URLs to prevent duplicate content
+- robots.txt configuration
+- XML sitemap generation
+
+**Semantic HTML & Structure:**
+- Use proper heading hierarchy (H1 → H2 → H3)
+- Only ONE H1 per page (main headline)
+- Semantic HTML5 elements: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
+- Proper `<form>` elements with labels
+- Alt text for all images (descriptive and keyword-rich)
+- Structured data using JSON-LD schema markup
+
+**Schema Markup to Include:**
+```json
+- LocalBusiness schema
+- Organization schema
+- Review/AggregateRating schema
+- BreadcrumbList schema
+- Service schema
+- FAQPage schema (if FAQ section added)
+```
+
+**Performance Optimization:**
+- Next.js Image component for automatic optimization
+- Lazy loading for below-the-fold content
+- Code splitting and dynamic imports
+- Minimize JavaScript bundle size
+- Font optimization with next/font
+- Achieve 90+ Lighthouse scores (Performance, Accessibility, SEO)
+
+**On-Page SEO Elements:**
+- Target keywords: "sell house fast", "cash home buyers", "we buy houses [location]", "sell house as-is"
+- Natural keyword placement in headings, content, and CTAs
+- Internal linking structure (link to FAQ, How It Works, etc.)
+- Clean, readable URLs
+- Mobile-friendly responsive design (Google mobile-first indexing)
+- Fast page load speed (under 3 seconds)
+
+**Content SEO:**
+- Write unique, valuable content (no keyword stuffing)
+- Include location-specific keywords naturally
+- Add FAQ section with common questions (great for featured snippets)
+- Testimonials with real names and locations
+- Clear, compelling CTAs with action verbs
+
+**Technical SEO:**
+- Proper HTML lang attribute
+- Viewport meta tag for mobile
+- HTTPS (assume secure hosting)
+- 404 page handling
+- Breadcrumb navigation
+- Accessible forms (ARIA labels where needed)
+
+**Files to Create:**
+- `robots.txt` (allow all, reference sitemap)
+- `sitemap.xml` (use next-sitemap package)
+- `manifest.json` for PWA basics
+
+### Key Messaging Points
+- **Trust**: "Family-owned", "Local", "Since [Year]", "Hundreds of satisfied sellers"
+- **Speed**: "24-hour offer", "Close in 7 days", "Fast cash"
+- **Ease**: "No fees", "No repairs", "No cleaning", "AS-IS condition"
+- **Transparency**: "Fair offers", "No obligation", "Simple process"
+
+### Design Inspiration Keywords
+Modern, clean, trustworthy, professional, approachable, fast, confident, premium feel, but not corporate or cold
+
+### Responsive Behavior
+- Mobile: Stacked sections, hamburger menu, touch-friendly forms
+- Tablet: 2-column layouts where appropriate
+- Desktop: Full multi-column layouts, larger hero imagery
+
+---
+
+**Additional Notes:**
+- Make it conversion-focused with multiple CTAs throughout
+- Include sticky phone button on mobile
+- Add subtle animation to draw attention to forms
+- Use social proof strategically (reviews, media logos, years in business)
+- Keep forms simple (don't ask too much upfront)
+- Make it feel trustworthy and legitimate (avoid "scammy" vibes)
+- Ensure all SEO best practices are implemented from the start
+- Target Core Web Vitals: LCP < 2.5s, FID < 100ms, CLS < 0.1
