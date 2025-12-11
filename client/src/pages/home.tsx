@@ -7,7 +7,7 @@ import SituationsGrid from "@/components/landing/SituationsGrid";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import StatsSection from "@/components/landing/StatsSection";
 import AboutSection from "@/components/landing/AboutSection";
-import FinalCTA from "@/components/landing/FinalCTA";
+import InvestorSection from "@/components/landing/InvestorSection";
 import Footer from "@/components/landing/Footer";
 import MobileCallButton from "@/components/landing/MobileCallButton";
 
@@ -36,7 +36,7 @@ export default function Home() {
       <SituationsGrid />
       <TestimonialsSection />
       <AboutSection />
-      <FinalCTA />
+      <InvestorSection />
       <Footer />
       <MobileCallButton />
       
@@ -53,14 +53,8 @@ export default function Home() {
             email: "info@quickhomebuyers.com",
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Phoenix",
-              addressRegion: "AZ",
+              addressRegion: "NJ",
               addressCountry: "US",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "500",
             },
             sameAs: [],
           }),

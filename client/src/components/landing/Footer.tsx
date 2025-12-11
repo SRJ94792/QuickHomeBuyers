@@ -31,11 +31,11 @@ export default function Footer() {
             </div>
             <p className="text-background/70 text-sm mb-6">
               Your trusted local cash home buyers. We purchase houses in any 
-              condition, offering fair prices and fast closings since 2009.
+              condition, offering fair prices and fast closings since 2015.
             </p>
             <div className="flex items-center gap-2 text-sm text-background/70">
               <MapPin className="w-4 h-4" />
-              <span>Serving Phoenix Metro Area</span>
+              <span>Serving All of New Jersey</span>
             </div>
           </div>
 

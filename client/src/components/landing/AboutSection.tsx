@@ -19,8 +19,8 @@ const values = [
   },
   {
     icon: Award,
-    title: "15+ Years Experience",
-    description: "Over 1,500 successful home purchases. We know how to get deals done.",
+    title: "10+ Years Experience",
+    description: "A decade of successful home purchases. We know how to get deals done.",
   },
 ];
 
@@ -43,8 +43,8 @@ export default function AboutSection() {
               <span className="block text-primary">Cash Home Buyers</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Since 2009, QuickHomeBuyers has helped over 1,500 homeowners sell their 
-              properties quickly and hassle-free. We're not a big corporation - we're 
+              Since 2015, QuickHomeBuyers has helped multiple homeowners across New Jersey 
+              sell their properties quickly and hassle-free. We're not a big corporation - we're 
               a local, family-owned company that cares about our community.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
@@ -52,27 +52,6 @@ export default function AboutSection() {
               or simply need to sell fast, we're here to help. Our goal is to provide 
               you with a fair offer and a smooth, stress-free experience.
             </p>
-
-            <div className="flex flex-wrap items-center gap-6">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-xl font-bold text-primary">A+</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">BBB Rated</div>
-                  <div className="text-sm text-muted-foreground">Accredited Business</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-xl font-bold text-primary">4.9</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground">Google Rating</div>
-                  <div className="text-sm text-muted-foreground">500+ Reviews</div>
-                </div>
-              </div>
-            </div>
           </motion.div>
 
           <motion.div

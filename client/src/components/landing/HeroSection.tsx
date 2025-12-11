@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import LeadForm from "./LeadForm";
 import heroImage from "@assets/generated_images/modern_luxury_home_exterior.png";
 
-const trustBadges = ["FOX", "NBC", "ABC", "CBS"];
-
 export default function HeroSection() {
   return (
     <section
@@ -50,20 +48,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-white/20">
-              <p className="text-sm text-white/60 mb-4">As Seen On</p>
-              <div className="flex flex-wrap items-center gap-6">
-                {trustBadges.map((badge) => (
-                  <div
-                    key={badge}
-                    className="text-white/40 font-bold text-lg tracking-wide"
-                    data-testid={`trust-badge-${badge.toLowerCase()}`}
-                  >
-                    {badge}
-                  </div>
-                ))}
-              </div>
-            </div>
           </motion.div>
 
           <motion.div

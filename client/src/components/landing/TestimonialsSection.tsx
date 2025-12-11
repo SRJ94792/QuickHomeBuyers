@@ -14,7 +14,7 @@ const testimonials = [
   {
     id: 1,
     name: "Sarah Mitchell",
-    location: "Phoenix, AZ",
+    location: "Newark, NJ",
     avatar: avatar1,
     rating: 5,
     text: "I was facing foreclosure and felt completely overwhelmed. QuickHomeBuyers gave me a fair cash offer within 24 hours and we closed in just 10 days. They saved my credit and gave me peace of mind. I can't thank them enough!",
@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 2,
     name: "Marcus Johnson",
-    location: "Dallas, TX",
+    location: "Jersey City, NJ",
     avatar: avatar2,
     rating: 5,
     text: "After inheriting my parent's home, I needed to sell fast since I live out of state. The team was professional, transparent, and handled everything. No repairs, no cleaning - they took it exactly as it was. Highly recommend!",
@@ -30,7 +30,7 @@ const testimonials = [
   {
     id: 3,
     name: "Elena Rodriguez",
-    location: "Tampa, FL",
+    location: "Trenton, NJ",
     avatar: avatar3,
     rating: 5,
     text: "I was skeptical at first, but QuickHomeBuyers exceeded my expectations. Their offer was fair, the process was simple, and I had cash in my account in under two weeks. Best decision I made!",

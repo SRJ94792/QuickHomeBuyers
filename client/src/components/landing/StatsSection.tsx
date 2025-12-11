@@ -3,9 +3,8 @@ import { motion, useInView } from "framer-motion";
 
 // todo: remove mock functionality - replace with real stats from API
 const stats = [
-  { value: 1500, suffix: "+", label: "Homes Purchased" },
   { value: 24, suffix: "hrs", label: "Average Offer Time" },
-  { value: 15, suffix: "+", label: "Years in Business" },
+  { value: 10, suffix: "+", label: "Years in Business" },
   { value: 98, suffix: "%", label: "Customer Satisfaction" },
 ];
 
@@ -47,7 +46,7 @@ export default function StatsSection() {
   return (
     <section className="py-16 md:py-20 bg-primary" data-testid="stats-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
